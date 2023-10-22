@@ -1,0 +1,1367 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+| Date         : Sun Oct 22 05:45:15 2023
+| Host         : ubuntu2004 running 64-bit Ubuntu 20.04.4 LTS
+| Command      : report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 -file /home/ubuntu/lab3/FIR_timing.txt
+| Design       : fir
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (0)
+6. checking no_output_delay (0)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (0)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      0.477        0.000                      0                  399        0.140        0.000                      0                  399        7.000        0.000                       0                   123  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock     Waveform(ns)       Period(ns)      Frequency(MHz)
+-----     ------------       ----------      --------------
+axis_clk  {0.000 7.500}      15.000          66.667          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+axis_clk            0.477        0.000                      0                  399        0.140        0.000                      0                  399        7.000        0.000                       0                   123  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  axis_clk
+  To Clock:  axis_clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.477ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.140ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        7.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.477ns  (required time - arrival time)
+  Source:                 araddr[7]
+                            (input port clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Destination:            data_A[5]
+                            (output port clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Path Group:             axis_clk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            15.000ns  (axis_clk rise@15.000ns - axis_clk rise@0.000ns)
+  Data Path Delay:        6.988ns  (logic 3.978ns (56.932%)  route 3.009ns (43.068%))
+  Logic Levels:           5  (IBUF=1 LUT3=1 LUT6=2 OBUF=1)
+  Input Delay:            3.750ns
+  Output Delay:           3.750ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  3.750     3.750    
+                                                      0.000     3.750 r  araddr[7] (IN)
+                         net (fo=0)                   0.000     3.750    araddr[7]
+                                                                      r  araddr_IBUF[7]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     4.722 r  araddr_IBUF[7]_inst/O
+                         net (fo=34, unplaced)        0.800     5.521    araddr_IBUF[7]
+                                                                      r  out_rvalid_reg_i_1/I2
+                         LUT3 (Prop_lut3_I2_O)        0.124     5.645 r  out_rvalid_reg_i_1/O
+                         net (fo=12, unplaced)        0.497     6.142    out_rvalid_pre
+                                                                      r  tap_A_OBUF[5]_inst_i_1/I3
+                         LUT6 (Prop_lut6_I3_O)        0.124     6.266 r  tap_A_OBUF[5]_inst_i_1/O
+                         net (fo=2, unplaced)         0.913     7.179    tap_A_OBUF[5]
+                                                                      r  data_A_OBUF[5]_inst_i_1/I0
+                         LUT6 (Prop_lut6_I0_O)        0.124     7.303 r  data_A_OBUF[5]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     8.103    data_A_OBUF[5]
+                                                                      r  data_A_OBUF[5]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634    10.738 r  data_A_OBUF[5]_inst/O
+                         net (fo=0)                   0.000    10.738    data_A[5]
+                                                                      r  data_A[5] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock axis_clk rise edge)
+                                                     15.000    15.000 r  
+                         clock pessimism              0.000    15.000    
+                         clock uncertainty           -0.035    14.965    
+                         output delay                -3.750    11.215    
+  -------------------------------------------------------------------
+                         required time                         11.215    
+                         arrival time                         -10.738    
+  -------------------------------------------------------------------
+                         slack                                  0.477    
+
+Slack (MET) :             0.960ns  (required time - arrival time)
+  Source:                 araddr[7]
+                            (input port clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Destination:            data_A[2]
+                            (output port clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Path Group:             axis_clk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            15.000ns  (axis_clk rise@15.000ns - axis_clk rise@0.000ns)
+  Data Path Delay:        6.505ns  (logic 3.978ns (61.159%)  route 2.526ns (38.841%))
+  Logic Levels:           5  (IBUF=1 LUT3=1 LUT5=1 LUT6=1 OBUF=1)
+  Input Delay:            3.750ns
+  Output Delay:           3.750ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  3.750     3.750    
+                                                      0.000     3.750 r  araddr[7] (IN)
+                         net (fo=0)                   0.000     3.750    araddr[7]
+                                                                      r  araddr_IBUF[7]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     4.722 r  araddr_IBUF[7]_inst/O
+                         net (fo=34, unplaced)        0.800     5.521    araddr_IBUF[7]
+                                                                      r  out_rvalid_reg_i_1/I2
+                         LUT3 (Prop_lut3_I2_O)        0.124     5.645 r  out_rvalid_reg_i_1/O
+                         net (fo=12, unplaced)        0.497     6.142    out_rvalid_pre
+                                                                      r  tap_A_OBUF[2]_inst_i_1/I3
+                         LUT6 (Prop_lut6_I3_O)        0.124     6.266 r  tap_A_OBUF[2]_inst_i_1/O
+                         net (fo=2, unplaced)         0.430     6.696    tap_A_OBUF[2]
+                                                                      r  data_A_OBUF[2]_inst_i_1/I0
+                         LUT5 (Prop_lut5_I0_O)        0.124     6.820 r  data_A_OBUF[2]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     7.620    data_A_OBUF[2]
+                                                                      r  data_A_OBUF[2]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634    10.255 r  data_A_OBUF[2]_inst/O
+                         net (fo=0)                   0.000    10.255    data_A[2]
+                                                                      r  data_A[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock axis_clk rise edge)
+                                                     15.000    15.000 r  
+                         clock pessimism              0.000    15.000    
+                         clock uncertainty           -0.035    14.965    
+                         output delay                -3.750    11.215    
+  -------------------------------------------------------------------
+                         required time                         11.215    
+                         arrival time                         -10.255    
+  -------------------------------------------------------------------
+                         slack                                  0.960    
+
+Slack (MET) :             0.960ns  (required time - arrival time)
+  Source:                 araddr[7]
+                            (input port clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Destination:            data_A[3]
+                            (output port clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Path Group:             axis_clk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            15.000ns  (axis_clk rise@15.000ns - axis_clk rise@0.000ns)
+  Data Path Delay:        6.505ns  (logic 3.978ns (61.159%)  route 2.526ns (38.841%))
+  Logic Levels:           5  (IBUF=1 LUT3=1 LUT6=2 OBUF=1)
+  Input Delay:            3.750ns
+  Output Delay:           3.750ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  3.750     3.750    
+                                                      0.000     3.750 r  araddr[7] (IN)
+                         net (fo=0)                   0.000     3.750    araddr[7]
+                                                                      r  araddr_IBUF[7]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     4.722 r  araddr_IBUF[7]_inst/O
+                         net (fo=34, unplaced)        0.800     5.521    araddr_IBUF[7]
+                                                                      r  out_rvalid_reg_i_1/I2
+                         LUT3 (Prop_lut3_I2_O)        0.124     5.645 r  out_rvalid_reg_i_1/O
+                         net (fo=12, unplaced)        0.497     6.142    out_rvalid_pre
+                                                                      r  tap_A_OBUF[3]_inst_i_1/I3
+                         LUT6 (Prop_lut6_I3_O)        0.124     6.266 r  tap_A_OBUF[3]_inst_i_1/O
+                         net (fo=2, unplaced)         0.430     6.696    tap_A_OBUF[3]
+                                                                      r  data_A_OBUF[3]_inst_i_1/I0
+                         LUT6 (Prop_lut6_I0_O)        0.124     6.820 r  data_A_OBUF[3]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     7.620    data_A_OBUF[3]
+                                                                      r  data_A_OBUF[3]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634    10.255 r  data_A_OBUF[3]_inst/O
+                         net (fo=0)                   0.000    10.255    data_A[3]
+                                                                      r  data_A[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock axis_clk rise edge)
+                                                     15.000    15.000 r  
+                         clock pessimism              0.000    15.000    
+                         clock uncertainty           -0.035    14.965    
+                         output delay                -3.750    11.215    
+  -------------------------------------------------------------------
+                         required time                         11.215    
+                         arrival time                         -10.255    
+  -------------------------------------------------------------------
+                         slack                                  0.960    
+
+Slack (MET) :             0.960ns  (required time - arrival time)
+  Source:                 araddr[7]
+                            (input port clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Destination:            data_A[4]
+                            (output port clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Path Group:             axis_clk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            15.000ns  (axis_clk rise@15.000ns - axis_clk rise@0.000ns)
+  Data Path Delay:        6.505ns  (logic 3.978ns (61.159%)  route 2.526ns (38.841%))
+  Logic Levels:           5  (IBUF=1 LUT3=1 LUT6=2 OBUF=1)
+  Input Delay:            3.750ns
+  Output Delay:           3.750ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  3.750     3.750    
+                                                      0.000     3.750 r  araddr[7] (IN)
+                         net (fo=0)                   0.000     3.750    araddr[7]
+                                                                      r  araddr_IBUF[7]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     4.722 r  araddr_IBUF[7]_inst/O
+                         net (fo=34, unplaced)        0.800     5.521    araddr_IBUF[7]
+                                                                      r  out_rvalid_reg_i_1/I2
+                         LUT3 (Prop_lut3_I2_O)        0.124     5.645 r  out_rvalid_reg_i_1/O
+                         net (fo=12, unplaced)        0.497     6.142    out_rvalid_pre
+                                                                      r  tap_A_OBUF[4]_inst_i_1/I3
+                         LUT6 (Prop_lut6_I3_O)        0.124     6.266 r  tap_A_OBUF[4]_inst_i_1/O
+                         net (fo=2, unplaced)         0.430     6.696    tap_A_OBUF[4]
+                                                                      r  data_A_OBUF[4]_inst_i_1/I0
+                         LUT6 (Prop_lut6_I0_O)        0.124     6.820 r  data_A_OBUF[4]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     7.620    data_A_OBUF[4]
+                                                                      r  data_A_OBUF[4]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634    10.255 r  data_A_OBUF[4]_inst/O
+                         net (fo=0)                   0.000    10.255    data_A[4]
+                                                                      r  data_A[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock axis_clk rise edge)
+                                                     15.000    15.000 r  
+                         clock pessimism              0.000    15.000    
+                         clock uncertainty           -0.035    14.965    
+                         output delay                -3.750    11.215    
+  -------------------------------------------------------------------
+                         required time                         11.215    
+                         arrival time                         -10.255    
+  -------------------------------------------------------------------
+                         slack                                  0.960    
+
+Slack (MET) :             1.051ns  (required time - arrival time)
+  Source:                 awvalid
+                            (input port clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Destination:            data_A[6]
+                            (output port clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Path Group:             axis_clk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            15.000ns  (axis_clk rise@15.000ns - axis_clk rise@0.000ns)
+  Data Path Delay:        6.414ns  (logic 3.880ns (60.499%)  route 2.533ns (39.501%))
+  Logic Levels:           4  (IBUF=1 LUT3=1 LUT6=1 OBUF=1)
+  Input Delay:            3.750ns
+  Output Delay:           3.750ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  3.750     3.750    
+                                                      0.000     3.750 r  awvalid (IN)
+                         net (fo=0)                   0.000     3.750    awvalid
+                                                                      r  awvalid_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     4.722 r  awvalid_IBUF_inst/O
+                         net (fo=42, unplaced)        0.800     5.521    awvalid_IBUF
+                                                                      r  tap_EN_OBUF_inst_i_2/I1
+                         LUT3 (Prop_lut3_I1_O)        0.150     5.671 r  tap_EN_OBUF_inst_i_2/O
+                         net (fo=6, unplaced)         0.934     6.605    m_tap_WE1
+                                                                      r  data_A_OBUF[6]_inst_i_1/I1
+                         LUT6 (Prop_lut6_I1_O)        0.124     6.729 r  data_A_OBUF[6]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     7.529    data_A_OBUF[6]
+                                                                      r  data_A_OBUF[6]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634    10.164 r  data_A_OBUF[6]_inst/O
+                         net (fo=0)                   0.000    10.164    data_A[6]
+                                                                      r  data_A[6] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock axis_clk rise edge)
+                                                     15.000    15.000 r  
+                         clock pessimism              0.000    15.000    
+                         clock uncertainty           -0.035    14.965    
+                         output delay                -3.750    11.215    
+  -------------------------------------------------------------------
+                         required time                         11.215    
+                         arrival time                         -10.164    
+  -------------------------------------------------------------------
+                         slack                                  1.051    
+
+Slack (MET) :             1.051ns  (required time - arrival time)
+  Source:                 awvalid
+                            (input port clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Destination:            tap_EN
+                            (output port clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Path Group:             axis_clk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            15.000ns  (axis_clk rise@15.000ns - axis_clk rise@0.000ns)
+  Data Path Delay:        6.414ns  (logic 3.880ns (60.499%)  route 2.533ns (39.501%))
+  Logic Levels:           4  (IBUF=1 LUT3=1 LUT5=1 OBUF=1)
+  Input Delay:            3.750ns
+  Output Delay:           3.750ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  3.750     3.750    
+                                                      0.000     3.750 r  awvalid (IN)
+                         net (fo=0)                   0.000     3.750    awvalid
+                                                                      r  awvalid_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     4.722 r  awvalid_IBUF_inst/O
+                         net (fo=42, unplaced)        0.800     5.521    awvalid_IBUF
+                                                                      r  tap_EN_OBUF_inst_i_2/I1
+                         LUT3 (Prop_lut3_I1_O)        0.150     5.671 r  tap_EN_OBUF_inst_i_2/O
+                         net (fo=6, unplaced)         0.934     6.605    m_tap_WE1
+                                                                      r  tap_EN_OBUF_inst_i_1/I1
+                         LUT5 (Prop_lut5_I1_O)        0.124     6.729 r  tap_EN_OBUF_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     7.529    tap_EN_OBUF
+                                                                      r  tap_EN_OBUF_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634    10.164 r  tap_EN_OBUF_inst/O
+                         net (fo=0)                   0.000    10.164    tap_EN
+                                                                      r  tap_EN (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock axis_clk rise edge)
+                                                     15.000    15.000 r  
+                         clock pessimism              0.000    15.000    
+                         clock uncertainty           -0.035    14.965    
+                         output delay                -3.750    11.215    
+  -------------------------------------------------------------------
+                         required time                         11.215    
+                         arrival time                         -10.164    
+  -------------------------------------------------------------------
+                         slack                                  1.051    
+
+Slack (MET) :             1.514ns  (required time - arrival time)
+  Source:                 araddr[7]
+                            (input port clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Destination:            data_A[0]
+                            (output port clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Path Group:             axis_clk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            15.000ns  (axis_clk rise@15.000ns - axis_clk rise@0.000ns)
+  Data Path Delay:        5.951ns  (logic 3.854ns (64.769%)  route 2.096ns (35.231%))
+  Logic Levels:           4  (IBUF=1 LUT3=1 LUT6=1 OBUF=1)
+  Input Delay:            3.750ns
+  Output Delay:           3.750ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  3.750     3.750    
+                                                      0.000     3.750 r  araddr[7] (IN)
+                         net (fo=0)                   0.000     3.750    araddr[7]
+                                                                      r  araddr_IBUF[7]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     4.722 r  araddr_IBUF[7]_inst/O
+                         net (fo=34, unplaced)        0.800     5.521    araddr_IBUF[7]
+                                                                      r  out_rvalid_reg_i_1/I2
+                         LUT3 (Prop_lut3_I2_O)        0.124     5.645 r  out_rvalid_reg_i_1/O
+                         net (fo=12, unplaced)        0.497     6.142    out_rvalid_pre
+                                                                      r  data_A_OBUF[0]_inst_i_1/I1
+                         LUT6 (Prop_lut6_I1_O)        0.124     6.266 r  data_A_OBUF[0]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     7.066    data_A_OBUF[0]
+                                                                      r  data_A_OBUF[0]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     9.701 r  data_A_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     9.701    data_A[0]
+                                                                      r  data_A[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock axis_clk rise edge)
+                                                     15.000    15.000 r  
+                         clock pessimism              0.000    15.000    
+                         clock uncertainty           -0.035    14.965    
+                         output delay                -3.750    11.215    
+  -------------------------------------------------------------------
+                         required time                         11.215    
+                         arrival time                          -9.701    
+  -------------------------------------------------------------------
+                         slack                                  1.514    
+
+Slack (MET) :             1.514ns  (required time - arrival time)
+  Source:                 araddr[7]
+                            (input port clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Destination:            data_A[1]
+                            (output port clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Path Group:             axis_clk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            15.000ns  (axis_clk rise@15.000ns - axis_clk rise@0.000ns)
+  Data Path Delay:        5.951ns  (logic 3.854ns (64.769%)  route 2.096ns (35.231%))
+  Logic Levels:           4  (IBUF=1 LUT3=1 LUT6=1 OBUF=1)
+  Input Delay:            3.750ns
+  Output Delay:           3.750ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  3.750     3.750    
+                                                      0.000     3.750 r  araddr[7] (IN)
+                         net (fo=0)                   0.000     3.750    araddr[7]
+                                                                      r  araddr_IBUF[7]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     4.722 r  araddr_IBUF[7]_inst/O
+                         net (fo=34, unplaced)        0.800     5.521    araddr_IBUF[7]
+                                                                      r  out_rvalid_reg_i_1/I2
+                         LUT3 (Prop_lut3_I2_O)        0.124     5.645 r  out_rvalid_reg_i_1/O
+                         net (fo=12, unplaced)        0.497     6.142    out_rvalid_pre
+                                                                      r  data_A_OBUF[1]_inst_i_1/I1
+                         LUT6 (Prop_lut6_I1_O)        0.124     6.266 r  data_A_OBUF[1]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     7.066    data_A_OBUF[1]
+                                                                      r  data_A_OBUF[1]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     9.701 r  data_A_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     9.701    data_A[1]
+                                                                      r  data_A[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock axis_clk rise edge)
+                                                     15.000    15.000 r  
+                         clock pessimism              0.000    15.000    
+                         clock uncertainty           -0.035    14.965    
+                         output delay                -3.750    11.215    
+  -------------------------------------------------------------------
+                         required time                         11.215    
+                         arrival time                          -9.701    
+  -------------------------------------------------------------------
+                         slack                                  1.514    
+
+Slack (MET) :             1.514ns  (required time - arrival time)
+  Source:                 araddr[7]
+                            (input port clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Destination:            tap_A[0]
+                            (output port clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Path Group:             axis_clk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            15.000ns  (axis_clk rise@15.000ns - axis_clk rise@0.000ns)
+  Data Path Delay:        5.951ns  (logic 3.854ns (64.769%)  route 2.096ns (35.231%))
+  Logic Levels:           4  (IBUF=1 LUT3=1 LUT6=1 OBUF=1)
+  Input Delay:            3.750ns
+  Output Delay:           3.750ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  3.750     3.750    
+                                                      0.000     3.750 r  araddr[7] (IN)
+                         net (fo=0)                   0.000     3.750    araddr[7]
+                                                                      r  araddr_IBUF[7]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     4.722 r  araddr_IBUF[7]_inst/O
+                         net (fo=34, unplaced)        0.800     5.521    araddr_IBUF[7]
+                                                                      r  out_rvalid_reg_i_1/I2
+                         LUT3 (Prop_lut3_I2_O)        0.124     5.645 r  out_rvalid_reg_i_1/O
+                         net (fo=12, unplaced)        0.497     6.142    out_rvalid_pre
+                                                                      r  tap_A_OBUF[0]_inst_i_1/I4
+                         LUT6 (Prop_lut6_I4_O)        0.124     6.266 r  tap_A_OBUF[0]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     7.066    tap_A_OBUF[0]
+                                                                      r  tap_A_OBUF[0]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     9.701 r  tap_A_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     9.701    tap_A[0]
+                                                                      r  tap_A[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock axis_clk rise edge)
+                                                     15.000    15.000 r  
+                         clock pessimism              0.000    15.000    
+                         clock uncertainty           -0.035    14.965    
+                         output delay                -3.750    11.215    
+  -------------------------------------------------------------------
+                         required time                         11.215    
+                         arrival time                          -9.701    
+  -------------------------------------------------------------------
+                         slack                                  1.514    
+
+Slack (MET) :             1.514ns  (required time - arrival time)
+  Source:                 araddr[7]
+                            (input port clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Destination:            tap_A[1]
+                            (output port clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Path Group:             axis_clk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            15.000ns  (axis_clk rise@15.000ns - axis_clk rise@0.000ns)
+  Data Path Delay:        5.951ns  (logic 3.854ns (64.769%)  route 2.096ns (35.231%))
+  Logic Levels:           4  (IBUF=1 LUT3=1 LUT6=1 OBUF=1)
+  Input Delay:            3.750ns
+  Output Delay:           3.750ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                         input delay                  3.750     3.750    
+                                                      0.000     3.750 r  araddr[7] (IN)
+                         net (fo=0)                   0.000     3.750    araddr[7]
+                                                                      r  araddr_IBUF[7]_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.972     4.722 r  araddr_IBUF[7]_inst/O
+                         net (fo=34, unplaced)        0.800     5.521    araddr_IBUF[7]
+                                                                      r  out_rvalid_reg_i_1/I2
+                         LUT3 (Prop_lut3_I2_O)        0.124     5.645 r  out_rvalid_reg_i_1/O
+                         net (fo=12, unplaced)        0.497     6.142    out_rvalid_pre
+                                                                      r  tap_A_OBUF[1]_inst_i_1/I4
+                         LUT6 (Prop_lut6_I4_O)        0.124     6.266 r  tap_A_OBUF[1]_inst_i_1/O
+                         net (fo=1, unplaced)         0.800     7.066    tap_A_OBUF[1]
+                                                                      r  tap_A_OBUF[1]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.634     9.701 r  tap_A_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     9.701    tap_A[1]
+                                                                      r  tap_A[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock axis_clk rise edge)
+                                                     15.000    15.000 r  
+                         clock pessimism              0.000    15.000    
+                         clock uncertainty           -0.035    14.965    
+                         output delay                -3.750    11.215    
+  -------------------------------------------------------------------
+                         required time                         11.215    
+                         arrival time                          -9.701    
+  -------------------------------------------------------------------
+                         slack                                  1.514    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.140ns  (arrival time - required time)
+  Source:                 count_x_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Destination:            r_sm_tlast_reg/D
+                            (rising edge-triggered cell FDRE clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Path Group:             axis_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (axis_clk rise@0.000ns - axis_clk rise@0.000ns)
+  Data Path Delay:        0.384ns  (logic 0.245ns (63.855%)  route 0.139ns (36.145%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.032ns
+    Source Clock Delay      (SCD):    0.678ns
+    Clock Pessimism Removal (CPR):    0.210ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  axis_clk (IN)
+                         net (fo=0)                   0.000     0.000    axis_clk
+                                                                      r  axis_clk_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  axis_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.538    axis_clk_IBUF
+                                                                      r  axis_clk_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026     0.564 r  axis_clk_IBUF_BUFG_inst/O
+                         net (fo=122, unplaced)       0.114     0.678    axis_clk_IBUF_BUFG
+                         FDRE                                         r  count_x_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.147     0.825 f  count_x_reg[2]/Q
+                         net (fo=3, unplaced)         0.139     0.963    count_x[2]
+                                                                      f  r_sm_tlast_i_1/I4
+                         LUT5 (Prop_lut5_I4_O)        0.098     1.061 r  r_sm_tlast_i_1/O
+                         net (fo=2, unplaced)         0.000     1.061    out_sm_tlast
+                         FDRE                                         r  r_sm_tlast_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  axis_clk (IN)
+                         net (fo=0)                   0.000     0.000    axis_clk
+                                                                      r  axis_clk_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     0.389 r  axis_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.355     0.744    axis_clk_IBUF
+                                                                      r  axis_clk_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.029     0.773 r  axis_clk_IBUF_BUFG_inst/O
+                         net (fo=122, unplaced)       0.259     1.032    axis_clk_IBUF_BUFG
+                         FDRE                                         r  r_sm_tlast_reg/C
+                         clock pessimism             -0.210     0.823    
+                         FDRE (Hold_fdre_C_D)         0.099     0.922    r_sm_tlast_reg
+  -------------------------------------------------------------------
+                         required time                         -0.922    
+                         arrival time                           1.061    
+  -------------------------------------------------------------------
+                         slack                                  0.140    
+
+Slack (MET) :             0.142ns  (arrival time - required time)
+  Source:                 ap_idle_reg/C
+                            (rising edge-triggered cell FDSE clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Destination:            r_rdata_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Path Group:             axis_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (axis_clk rise@0.000ns - axis_clk rise@0.000ns)
+  Data Path Delay:        0.386ns  (logic 0.245ns (63.437%)  route 0.141ns (36.563%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.032ns
+    Source Clock Delay      (SCD):    0.678ns
+    Clock Pessimism Removal (CPR):    0.210ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  axis_clk (IN)
+                         net (fo=0)                   0.000     0.000    axis_clk
+                                                                      r  axis_clk_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  axis_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.538    axis_clk_IBUF
+                                                                      r  axis_clk_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026     0.564 r  axis_clk_IBUF_BUFG_inst/O
+                         net (fo=122, unplaced)       0.114     0.678    axis_clk_IBUF_BUFG
+                         FDSE                                         r  ap_idle_reg/C
+  -------------------------------------------------------------------    -------------------
+                         FDSE (Prop_fdse_C_Q)         0.147     0.825 r  ap_idle_reg/Q
+                         net (fo=4, unplaced)         0.141     0.966    ap_idle
+                                                                      r  r_rdata[2]_i_1/I5
+                         LUT6 (Prop_lut6_I5_O)        0.098     1.064 r  r_rdata[2]_i_1/O
+                         net (fo=1, unplaced)         0.000     1.064    r_rdata[2]_i_1_n_0
+                         FDRE                                         r  r_rdata_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  axis_clk (IN)
+                         net (fo=0)                   0.000     0.000    axis_clk
+                                                                      r  axis_clk_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     0.389 r  axis_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.355     0.744    axis_clk_IBUF
+                                                                      r  axis_clk_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.029     0.773 r  axis_clk_IBUF_BUFG_inst/O
+                         net (fo=122, unplaced)       0.259     1.032    axis_clk_IBUF_BUFG
+                         FDRE                                         r  r_rdata_reg[2]/C
+                         clock pessimism             -0.210     0.823    
+                         FDRE (Hold_fdre_C_D)         0.099     0.922    r_rdata_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -0.922    
+                         arrival time                           1.064    
+  -------------------------------------------------------------------
+                         slack                                  0.142    
+
+Slack (MET) :             0.142ns  (arrival time - required time)
+  Source:                 r_rvalid_reg/C
+                            (rising edge-triggered cell FDRE clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Destination:            r_rvalid_reg/D
+                            (rising edge-triggered cell FDRE clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Path Group:             axis_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (axis_clk rise@0.000ns - axis_clk rise@0.000ns)
+  Data Path Delay:        0.386ns  (logic 0.245ns (63.437%)  route 0.141ns (36.563%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.032ns
+    Source Clock Delay      (SCD):    0.678ns
+    Clock Pessimism Removal (CPR):    0.210ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  axis_clk (IN)
+                         net (fo=0)                   0.000     0.000    axis_clk
+                                                                      r  axis_clk_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  axis_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.538    axis_clk_IBUF
+                                                                      r  axis_clk_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026     0.564 r  axis_clk_IBUF_BUFG_inst/O
+                         net (fo=122, unplaced)       0.114     0.678    axis_clk_IBUF_BUFG
+                         FDRE                                         r  r_rvalid_reg/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.147     0.825 f  r_rvalid_reg/Q
+                         net (fo=4, unplaced)         0.141     0.966    rvalid_OBUF
+                                                                      f  r_rvalid_i_1/I5
+                         LUT6 (Prop_lut6_I5_O)        0.098     1.064 r  r_rvalid_i_1/O
+                         net (fo=2, unplaced)         0.000     1.064    out_rvalid1_out
+                         FDRE                                         r  r_rvalid_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  axis_clk (IN)
+                         net (fo=0)                   0.000     0.000    axis_clk
+                                                                      r  axis_clk_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     0.389 r  axis_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.355     0.744    axis_clk_IBUF
+                                                                      r  axis_clk_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.029     0.773 r  axis_clk_IBUF_BUFG_inst/O
+                         net (fo=122, unplaced)       0.259     1.032    axis_clk_IBUF_BUFG
+                         FDRE                                         r  r_rvalid_reg/C
+                         clock pessimism             -0.210     0.823    
+                         FDRE (Hold_fdre_C_D)         0.099     0.922    r_rvalid_reg
+  -------------------------------------------------------------------
+                         required time                         -0.922    
+                         arrival time                           1.064    
+  -------------------------------------------------------------------
+                         slack                                  0.142    
+
+Slack (MET) :             0.143ns  (arrival time - required time)
+  Source:                 count_x_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Destination:            r_sm_tvalid_reg/D
+                            (rising edge-triggered cell FDRE clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Path Group:             axis_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (axis_clk rise@0.000ns - axis_clk rise@0.000ns)
+  Data Path Delay:        0.387ns  (logic 0.248ns (64.136%)  route 0.139ns (35.864%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.032ns
+    Source Clock Delay      (SCD):    0.678ns
+    Clock Pessimism Removal (CPR):    0.210ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  axis_clk (IN)
+                         net (fo=0)                   0.000     0.000    axis_clk
+                                                                      r  axis_clk_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  axis_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.538    axis_clk_IBUF
+                                                                      r  axis_clk_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026     0.564 r  axis_clk_IBUF_BUFG_inst/O
+                         net (fo=122, unplaced)       0.114     0.678    axis_clk_IBUF_BUFG
+                         FDRE                                         r  count_x_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.147     0.825 r  count_x_reg[1]/Q
+                         net (fo=3, unplaced)         0.139     0.963    count_x[1]
+                                                                      r  r_sm_tvalid_i_1/I3
+                         LUT4 (Prop_lut4_I3_O)        0.101     1.064 r  r_sm_tvalid_i_1/O
+                         net (fo=1, unplaced)         0.000     1.064    out_sm_tvalid
+                         FDRE                                         r  r_sm_tvalid_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  axis_clk (IN)
+                         net (fo=0)                   0.000     0.000    axis_clk
+                                                                      r  axis_clk_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     0.389 r  axis_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.355     0.744    axis_clk_IBUF
+                                                                      r  axis_clk_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.029     0.773 r  axis_clk_IBUF_BUFG_inst/O
+                         net (fo=122, unplaced)       0.259     1.032    axis_clk_IBUF_BUFG
+                         FDRE                                         r  r_sm_tvalid_reg/C
+                         clock pessimism             -0.210     0.823    
+                         FDRE (Hold_fdre_C_D)         0.099     0.922    r_sm_tvalid_reg
+  -------------------------------------------------------------------
+                         required time                         -0.922    
+                         arrival time                           1.064    
+  -------------------------------------------------------------------
+                         slack                                  0.143    
+
+Slack (MET) :             0.144ns  (arrival time - required time)
+  Source:                 ap_start_reg/C
+                            (rising edge-triggered cell FDRE clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Destination:            r_rdata_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Path Group:             axis_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (axis_clk rise@0.000ns - axis_clk rise@0.000ns)
+  Data Path Delay:        0.388ns  (logic 0.245ns (63.161%)  route 0.143ns (36.839%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.032ns
+    Source Clock Delay      (SCD):    0.678ns
+    Clock Pessimism Removal (CPR):    0.210ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  axis_clk (IN)
+                         net (fo=0)                   0.000     0.000    axis_clk
+                                                                      r  axis_clk_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  axis_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.538    axis_clk_IBUF
+                                                                      r  axis_clk_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026     0.564 r  axis_clk_IBUF_BUFG_inst/O
+                         net (fo=122, unplaced)       0.114     0.678    axis_clk_IBUF_BUFG
+                         FDRE                                         r  ap_start_reg/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.147     0.825 r  ap_start_reg/Q
+                         net (fo=5, unplaced)         0.143     0.967    ap_start
+                                                                      r  r_rdata[0]_i_1/I5
+                         LUT6 (Prop_lut6_I5_O)        0.098     1.065 r  r_rdata[0]_i_1/O
+                         net (fo=1, unplaced)         0.000     1.065    r_rdata[0]_i_1_n_0
+                         FDRE                                         r  r_rdata_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  axis_clk (IN)
+                         net (fo=0)                   0.000     0.000    axis_clk
+                                                                      r  axis_clk_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     0.389 r  axis_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.355     0.744    axis_clk_IBUF
+                                                                      r  axis_clk_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.029     0.773 r  axis_clk_IBUF_BUFG_inst/O
+                         net (fo=122, unplaced)       0.259     1.032    axis_clk_IBUF_BUFG
+                         FDRE                                         r  r_rdata_reg[0]/C
+                         clock pessimism             -0.210     0.823    
+                         FDRE (Hold_fdre_C_D)         0.099     0.922    r_rdata_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -0.922    
+                         arrival time                           1.065    
+  -------------------------------------------------------------------
+                         slack                                  0.144    
+
+Slack (MET) :             0.144ns  (arrival time - required time)
+  Source:                 ap_done_reg/C
+                            (rising edge-triggered cell FDRE clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Destination:            r_rdata_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Path Group:             axis_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (axis_clk rise@0.000ns - axis_clk rise@0.000ns)
+  Data Path Delay:        0.388ns  (logic 0.245ns (63.161%)  route 0.143ns (36.839%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.032ns
+    Source Clock Delay      (SCD):    0.678ns
+    Clock Pessimism Removal (CPR):    0.210ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  axis_clk (IN)
+                         net (fo=0)                   0.000     0.000    axis_clk
+                                                                      r  axis_clk_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  axis_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.538    axis_clk_IBUF
+                                                                      r  axis_clk_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026     0.564 r  axis_clk_IBUF_BUFG_inst/O
+                         net (fo=122, unplaced)       0.114     0.678    axis_clk_IBUF_BUFG
+                         FDRE                                         r  ap_done_reg/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.147     0.825 r  ap_done_reg/Q
+                         net (fo=5, unplaced)         0.143     0.967    ap_done
+                                                                      r  r_rdata[1]_i_1/I5
+                         LUT6 (Prop_lut6_I5_O)        0.098     1.065 r  r_rdata[1]_i_1/O
+                         net (fo=1, unplaced)         0.000     1.065    r_rdata[1]_i_1_n_0
+                         FDRE                                         r  r_rdata_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  axis_clk (IN)
+                         net (fo=0)                   0.000     0.000    axis_clk
+                                                                      r  axis_clk_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     0.389 r  axis_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.355     0.744    axis_clk_IBUF
+                                                                      r  axis_clk_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.029     0.773 r  axis_clk_IBUF_BUFG_inst/O
+                         net (fo=122, unplaced)       0.259     1.032    axis_clk_IBUF_BUFG
+                         FDRE                                         r  r_rdata_reg[1]/C
+                         clock pessimism             -0.210     0.823    
+                         FDRE (Hold_fdre_C_D)         0.099     0.922    r_rdata_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -0.922    
+                         arrival time                           1.065    
+  -------------------------------------------------------------------
+                         slack                                  0.144    
+
+Slack (MET) :             0.148ns  (arrival time - required time)
+  Source:                 pre_y_reg[10]/C
+                            (rising edge-triggered cell FDRE clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Destination:            pre_y_reg[10]/D
+                            (rising edge-triggered cell FDRE clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Path Group:             axis_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (axis_clk rise@0.000ns - axis_clk rise@0.000ns)
+  Data Path Delay:        0.406ns  (logic 0.257ns (63.332%)  route 0.149ns (36.668%))
+  Logic Levels:           2  (CARRY4=1 LUT2=1)
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.032ns
+    Source Clock Delay      (SCD):    0.678ns
+    Clock Pessimism Removal (CPR):    0.210ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  axis_clk (IN)
+                         net (fo=0)                   0.000     0.000    axis_clk
+                                                                      r  axis_clk_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  axis_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.538    axis_clk_IBUF
+                                                                      r  axis_clk_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026     0.564 r  axis_clk_IBUF_BUFG_inst/O
+                         net (fo=122, unplaced)       0.114     0.678    axis_clk_IBUF_BUFG
+                         FDRE                                         r  pre_y_reg[10]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.147     0.825 r  pre_y_reg[10]/Q
+                         net (fo=1, unplaced)         0.149     0.973    pre_y[10]
+                                                                      r  pre_y[11]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)        0.045     1.018 r  pre_y[11]_i_3/O
+                         net (fo=1, unplaced)         0.000     1.018    pre_y[11]_i_3_n_0
+                                                                      r  pre_y_reg[11]_i_1/S[2]
+                         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.065     1.083 r  pre_y_reg[11]_i_1/O[2]
+                         net (fo=2, unplaced)         0.000     1.083    y[10]
+                         FDRE                                         r  pre_y_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  axis_clk (IN)
+                         net (fo=0)                   0.000     0.000    axis_clk
+                                                                      r  axis_clk_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     0.389 r  axis_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.355     0.744    axis_clk_IBUF
+                                                                      r  axis_clk_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.029     0.773 r  axis_clk_IBUF_BUFG_inst/O
+                         net (fo=122, unplaced)       0.259     1.032    axis_clk_IBUF_BUFG
+                         FDRE                                         r  pre_y_reg[10]/C
+                         clock pessimism             -0.210     0.823    
+                         FDRE (Hold_fdre_C_D)         0.113     0.936    pre_y_reg[10]
+  -------------------------------------------------------------------
+                         required time                         -0.936    
+                         arrival time                           1.083    
+  -------------------------------------------------------------------
+                         slack                                  0.148    
+
+Slack (MET) :             0.148ns  (arrival time - required time)
+  Source:                 pre_y_reg[14]/C
+                            (rising edge-triggered cell FDRE clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Destination:            pre_y_reg[14]/D
+                            (rising edge-triggered cell FDRE clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Path Group:             axis_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (axis_clk rise@0.000ns - axis_clk rise@0.000ns)
+  Data Path Delay:        0.406ns  (logic 0.257ns (63.332%)  route 0.149ns (36.668%))
+  Logic Levels:           2  (CARRY4=1 LUT2=1)
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.032ns
+    Source Clock Delay      (SCD):    0.678ns
+    Clock Pessimism Removal (CPR):    0.210ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  axis_clk (IN)
+                         net (fo=0)                   0.000     0.000    axis_clk
+                                                                      r  axis_clk_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  axis_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.538    axis_clk_IBUF
+                                                                      r  axis_clk_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026     0.564 r  axis_clk_IBUF_BUFG_inst/O
+                         net (fo=122, unplaced)       0.114     0.678    axis_clk_IBUF_BUFG
+                         FDRE                                         r  pre_y_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.147     0.825 r  pre_y_reg[14]/Q
+                         net (fo=1, unplaced)         0.149     0.973    pre_y[14]
+                                                                      r  pre_y[15]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)        0.045     1.018 r  pre_y[15]_i_3/O
+                         net (fo=1, unplaced)         0.000     1.018    pre_y[15]_i_3_n_0
+                                                                      r  pre_y_reg[15]_i_1/S[2]
+                         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.065     1.083 r  pre_y_reg[15]_i_1/O[2]
+                         net (fo=2, unplaced)         0.000     1.083    y[14]
+                         FDRE                                         r  pre_y_reg[14]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  axis_clk (IN)
+                         net (fo=0)                   0.000     0.000    axis_clk
+                                                                      r  axis_clk_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     0.389 r  axis_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.355     0.744    axis_clk_IBUF
+                                                                      r  axis_clk_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.029     0.773 r  axis_clk_IBUF_BUFG_inst/O
+                         net (fo=122, unplaced)       0.259     1.032    axis_clk_IBUF_BUFG
+                         FDRE                                         r  pre_y_reg[14]/C
+                         clock pessimism             -0.210     0.823    
+                         FDRE (Hold_fdre_C_D)         0.113     0.936    pre_y_reg[14]
+  -------------------------------------------------------------------
+                         required time                         -0.936    
+                         arrival time                           1.083    
+  -------------------------------------------------------------------
+                         slack                                  0.148    
+
+Slack (MET) :             0.148ns  (arrival time - required time)
+  Source:                 pre_y_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Destination:            pre_y_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Path Group:             axis_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (axis_clk rise@0.000ns - axis_clk rise@0.000ns)
+  Data Path Delay:        0.406ns  (logic 0.257ns (63.332%)  route 0.149ns (36.668%))
+  Logic Levels:           2  (CARRY4=1 LUT2=1)
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.032ns
+    Source Clock Delay      (SCD):    0.678ns
+    Clock Pessimism Removal (CPR):    0.210ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  axis_clk (IN)
+                         net (fo=0)                   0.000     0.000    axis_clk
+                                                                      r  axis_clk_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  axis_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.538    axis_clk_IBUF
+                                                                      r  axis_clk_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026     0.564 r  axis_clk_IBUF_BUFG_inst/O
+                         net (fo=122, unplaced)       0.114     0.678    axis_clk_IBUF_BUFG
+                         FDRE                                         r  pre_y_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.147     0.825 r  pre_y_reg[2]/Q
+                         net (fo=1, unplaced)         0.149     0.973    pre_y[2]
+                                                                      r  pre_y[3]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)        0.045     1.018 r  pre_y[3]_i_3/O
+                         net (fo=1, unplaced)         0.000     1.018    pre_y[3]_i_3_n_0
+                                                                      r  pre_y_reg[3]_i_1/S[2]
+                         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.065     1.083 r  pre_y_reg[3]_i_1/O[2]
+                         net (fo=2, unplaced)         0.000     1.083    y[2]
+                         FDRE                                         r  pre_y_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  axis_clk (IN)
+                         net (fo=0)                   0.000     0.000    axis_clk
+                                                                      r  axis_clk_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     0.389 r  axis_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.355     0.744    axis_clk_IBUF
+                                                                      r  axis_clk_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.029     0.773 r  axis_clk_IBUF_BUFG_inst/O
+                         net (fo=122, unplaced)       0.259     1.032    axis_clk_IBUF_BUFG
+                         FDRE                                         r  pre_y_reg[2]/C
+                         clock pessimism             -0.210     0.823    
+                         FDRE (Hold_fdre_C_D)         0.113     0.936    pre_y_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -0.936    
+                         arrival time                           1.083    
+  -------------------------------------------------------------------
+                         slack                                  0.148    
+
+Slack (MET) :             0.148ns  (arrival time - required time)
+  Source:                 pre_y_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Destination:            pre_y_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by axis_clk  {rise@0.000ns fall@7.500ns period=15.000ns})
+  Path Group:             axis_clk
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (axis_clk rise@0.000ns - axis_clk rise@0.000ns)
+  Data Path Delay:        0.406ns  (logic 0.257ns (63.332%)  route 0.149ns (36.668%))
+  Logic Levels:           2  (CARRY4=1 LUT2=1)
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.032ns
+    Source Clock Delay      (SCD):    0.678ns
+    Clock Pessimism Removal (CPR):    0.210ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  axis_clk (IN)
+                         net (fo=0)                   0.000     0.000    axis_clk
+                                                                      r  axis_clk_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.200     0.200 r  axis_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.337     0.538    axis_clk_IBUF
+                                                                      r  axis_clk_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.026     0.564 r  axis_clk_IBUF_BUFG_inst/O
+                         net (fo=122, unplaced)       0.114     0.678    axis_clk_IBUF_BUFG
+                         FDRE                                         r  pre_y_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.147     0.825 r  pre_y_reg[6]/Q
+                         net (fo=1, unplaced)         0.149     0.973    pre_y[6]
+                                                                      r  pre_y[7]_i_3/I1
+                         LUT2 (Prop_lut2_I1_O)        0.045     1.018 r  pre_y[7]_i_3/O
+                         net (fo=1, unplaced)         0.000     1.018    pre_y[7]_i_3_n_0
+                                                                      r  pre_y_reg[7]_i_1/S[2]
+                         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.065     1.083 r  pre_y_reg[7]_i_1/O[2]
+                         net (fo=2, unplaced)         0.000     1.083    y[6]
+                         FDRE                                         r  pre_y_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock axis_clk rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  axis_clk (IN)
+                         net (fo=0)                   0.000     0.000    axis_clk
+                                                                      r  axis_clk_IBUF_inst/I
+                         IBUF (Prop_ibuf_I_O)         0.389     0.389 r  axis_clk_IBUF_inst/O
+                         net (fo=1, unplaced)         0.355     0.744    axis_clk_IBUF
+                                                                      r  axis_clk_IBUF_BUFG_inst/I
+                         BUFG (Prop_bufg_I_O)         0.029     0.773 r  axis_clk_IBUF_BUFG_inst/O
+                         net (fo=122, unplaced)       0.259     1.032    axis_clk_IBUF_BUFG
+                         FDRE                                         r  pre_y_reg[6]/C
+                         clock pessimism             -0.210     0.823    
+                         FDRE (Hold_fdre_C_D)         0.113     0.936    pre_y_reg[6]
+  -------------------------------------------------------------------
+                         required time                         -0.936    
+                         arrival time                           1.083    
+  -------------------------------------------------------------------
+                         slack                                  0.148    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         axis_clk
+Waveform(ns):       { 0.000 7.500 }
+Period(ns):         15.000
+Sources:            { axis_clk }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period        n/a     BUFG/I   n/a            2.155         15.000      12.845               axis_clk_IBUF_BUFG_inst/I
+Min Period        n/a     FDRE/C   n/a            1.000         15.000      14.000               FSM_onehot_state_reg[0]/C
+Min Period        n/a     FDRE/C   n/a            1.000         15.000      14.000               FSM_onehot_state_reg[1]/C
+Min Period        n/a     FDRE/C   n/a            1.000         15.000      14.000               FSM_onehot_state_reg[2]/C
+Min Period        n/a     FDSE/C   n/a            1.000         15.000      14.000               FSM_onehot_state_reg[3]/C
+Min Period        n/a     FDSE/C   n/a            1.000         15.000      14.000               addr_flag_reg[0]/C
+Min Period        n/a     FDRE/C   n/a            1.000         15.000      14.000               addr_flag_reg[1]/C
+Min Period        n/a     FDRE/C   n/a            1.000         15.000      14.000               addr_flag_reg[2]/C
+Min Period        n/a     FDRE/C   n/a            1.000         15.000      14.000               addr_flag_reg[3]/C
+Min Period        n/a     FDRE/C   n/a            1.000         15.000      14.000               ap_done_reg/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         7.500       7.000                FSM_onehot_state_reg[0]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         7.500       7.000                FSM_onehot_state_reg[0]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         7.500       7.000                FSM_onehot_state_reg[1]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         7.500       7.000                FSM_onehot_state_reg[1]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         7.500       7.000                FSM_onehot_state_reg[2]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         7.500       7.000                FSM_onehot_state_reg[2]/C
+Low Pulse Width   Slow    FDSE/C   n/a            0.500         7.500       7.000                FSM_onehot_state_reg[3]/C
+Low Pulse Width   Fast    FDSE/C   n/a            0.500         7.500       7.000                FSM_onehot_state_reg[3]/C
+Low Pulse Width   Slow    FDSE/C   n/a            0.500         7.500       7.000                addr_flag_reg[0]/C
+Low Pulse Width   Fast    FDSE/C   n/a            0.500         7.500       7.000                addr_flag_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         7.500       7.000                FSM_onehot_state_reg[0]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         7.500       7.000                FSM_onehot_state_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         7.500       7.000                FSM_onehot_state_reg[1]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         7.500       7.000                FSM_onehot_state_reg[1]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         7.500       7.000                FSM_onehot_state_reg[2]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         7.500       7.000                FSM_onehot_state_reg[2]/C
+High Pulse Width  Slow    FDSE/C   n/a            0.500         7.500       7.000                FSM_onehot_state_reg[3]/C
+High Pulse Width  Fast    FDSE/C   n/a            0.500         7.500       7.000                FSM_onehot_state_reg[3]/C
+High Pulse Width  Slow    FDSE/C   n/a            0.500         7.500       7.000                addr_flag_reg[0]/C
+High Pulse Width  Fast    FDSE/C   n/a            0.500         7.500       7.000                addr_flag_reg[0]/C
+
+
+
