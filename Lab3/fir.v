@@ -298,9 +298,9 @@ always@* begin
     out_sm_tdata = y;
     out_sm_tvalid = (count_x == 4'd10);
     out_sm_tlast = ((last_flag == 1'b1) & (count_x == 4'd10));
-    out_arready = 1;//out_rvalid;
-    out_awready = 1;//awvalid; //(r_awready == 1'b1) ? 1'b0 : awvalid;
-    out_wready = 1;//out_awready;
+    out_arready = 1;
+    out_awready = 1;
+    out_wready = 1;
 end 
 
 // counter
